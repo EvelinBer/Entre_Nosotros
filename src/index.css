@@ -1,0 +1,303 @@
+:root {
+  --primary-color: #ff3131;
+  --secondary-color: #8b0000;
+  --text-color: #333;
+  --background-color: #f4f4f4;
+  --white: #fff;
+  --accent-color: #ffd700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--white);
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  margin-right: 10px;
+  font-size: 2rem;
+}
+
+.nav-menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-menu li {
+  padding: 0 15px;
+}
+
+.nav-menu a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: var(--primary-color);
+  background-color: rgba(255, 49, 49, 0.1);
+}
+/* ... (estilos anteriores permanecen iguales) */
+
+/* Estilos del carrusel de imágenes */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  overflow: hidden;
+}
+
+.image-carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.image-carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.image-carousel img.active {
+  opacity: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* ... (resto de los estilos permanecen iguales) */
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Content Section Styles */
+.content-section {
+  padding: 5rem 0;
+}
+
+.content-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--primary-color);
+  position: relative;
+}
+
+.content-section h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 10px auto 0;
+}
+
+/* Map Section Styles */
+.map-container {
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Community Card Styles */
+.community-card {
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.community-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.community-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.community-content {
+  padding: 1.5rem;
+}
+
+.community-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.community-content__btn {
+  margin-top: 1rem;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.footer-logo {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  background-color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.footer-logo:hover {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+}
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.partner-logo {
+  height: 60px;
+  width: auto;
+  filter: brightness(1) invert(0);
+  transition: filter 0.3s ease;
+}
+
+.partner-logo:hover {
+  filter: brightness(1) invert(0);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .partner-logos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-menu {
+    display: none;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1.2rem;
+  }
+  .map-container {
+    height: 400px;
+  }
+}
