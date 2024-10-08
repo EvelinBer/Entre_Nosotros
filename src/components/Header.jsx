@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
+
 export default function Header() {
   return (
     <header className="navbar">
       <div className="container">
-        <a href="#" className="logo">
+        <Link to={"/Entre_Nosotros"} className="logo">
           <i className="fas fa-users logo-icon"></i>
           Entre Nosotros
-        </a>
+        </Link>
         <nav>
           <ul className="nav-menu">
             <li>

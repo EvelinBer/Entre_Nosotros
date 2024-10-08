@@ -17,16 +17,19 @@ export default function CommunitiesSection() {
         >
           <CommunityCard
             name="Los Yukpa"
+            slug="yukpa"
             description="Conoce más sobre nosotros. Según el Observatorio del Programa Presidencial de Derechos Humanos, su territorio se extiende por la Serranía del Perijá, entre Colombia y Venezuela."
             imageUrl={yukpa}
           />
           <CommunityCard
             name="Los Barí"
+            slug="bari"
             description="Este pueblo indígena tiene una población de 5,923 personas, de los cuales 4,931 se encuentran en las comunidades del Catatumbo."
             imageUrl={bari}
           />
           <CommunityCard
             name="Los U'wa"
+            slug="uwa"
             description="Conocidos como 'la gente inteligente que sabe hablar', los U'wa son guardianes ancestrales de la Sierra Nevada del Cocuy."
             imageUrl={uwa}
           />
