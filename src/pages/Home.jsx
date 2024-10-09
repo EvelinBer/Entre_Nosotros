@@ -1,3 +1,4 @@
+import About from "../components/About";
 import CommunitiesSection from "../components/CommunitiesSection";
 import HeroSection from "../components/HeroSection";
 import MapSection from "../components/MapSection";
@@ -12,6 +13,7 @@ function Home() {
         buttonText="Conocer"
       />
       <MapSection />
+      <About />
       <CommunitiesSection />
       <NewsSection />
     </>

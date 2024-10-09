@@ -293,3 +293,16 @@ body {
     height: 400px;
   }
 }
+
+.text-md{
+  font-size: 1.2rem;
+}
+
+.about-element{
+  border: solid var(--primary-color) 3px;
+  padding: 0.5rem !important;
+}
+
+.mt-2{
+  margin-top: 2rem;
+}
